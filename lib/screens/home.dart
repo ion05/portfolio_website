@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/components/navbar.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
                         height: MediaQuery.of(context).size.height * 0.05,
                       ),
                       const Text(
-                        "Hi!, I'm Aayan, a freshman at Purdue University. I'm majoring in Computer Science and Artificial Intelligence with a minor in Business Intelligence and certificate in Entrepreunership and Innovation",
+                        "Hi, I'm Aayan Agarwal, a sophomore at Purdue University. I'm majoring in Computer Science and Artificial Intelligence with a minor in Business Intelligence and certificate in Entrepreunership and Innovation",
                         style: TextStyle(
                             fontFamily: "Roboto",
                             color: Colors.black,
@@ -63,7 +64,7 @@ class HomePage extends StatelessWidget {
                         height: MediaQuery.of(context).size.height * 0.03,
                       ),
                       const Text(
-                        "I like to solve problems around me with code. I have experience in developing web apps and mobile applications. I mostly work with Python, JavaScript, and Dart. I'm also familiar with frameworks like SolidJS, Flutter, and NodeJS.",
+                        "I like to solve problems around me with code. I have experience in developing web apps and mobile applications. I mostly work with Python, JavaScript, and Dart. I'm also familiar with frameworks like SolidJS, Flutter, and NodeJS. I also have experience with data analysis using R, NumPY, Matplotlib and Tensorflow.",
                         style: TextStyle(
                           fontFamily: "Roboto",
                           color: Colors.black,
@@ -124,6 +125,40 @@ class HomePage extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.03,
                       ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: () {
+                              launchUrl(Uri.parse(
+                                  "https://www.linkedin.com/in/aayan-agarwal/"));
+                            },
+                            icon: const FaIcon(FontAwesomeIcons.linkedin),
+                            color: Colors.black,
+                          ),
+                          IconButton(
+                              onPressed: () {
+                                launchUrl(
+                                    Uri.parse("https://github.com/ion05"));
+                              },
+                              icon: const FaIcon(FontAwesomeIcons.github),
+                              color: Colors.black),
+                          IconButton(
+                              onPressed: () {
+                                launchUrl(Uri.parse(
+                                    "https://open.spotify.com/user/qb7xop2miseci671twvrpe6oj?si=911876792d704e52"));
+                              },
+                              icon: const FaIcon(FontAwesomeIcons.spotify),
+                              color: Colors.black),
+                          IconButton(
+                              onPressed: () {
+                                launchUrl(Uri.parse(
+                                    "https://www.instagram.com/aayan_14.05/"));
+                              },
+                              icon: const FaIcon(FontAwesomeIcons.instagram),
+                              color: Colors.black),
+                        ],
+                      )
                     ],
                   ),
                 ),

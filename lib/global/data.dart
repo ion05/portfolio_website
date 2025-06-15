@@ -94,9 +94,8 @@ const projects = [
   {
     "name": "Smart Dashboard",
     "description":
-        "Developed a dummy dashbaord for cars. Has real time weather updates, navigation, music player, calendar and emergency calling.",
-    "techStack":
-        "NodeJS, ExpressJS, MongoDB, GCAL API, OpenWeather API, SpotifyAPI, Twilio API",
+        "Developed a dummy dashbaord for cars with real time weather updates, navigation, music player, calendar and emergency calling.",
+    "techStack": "ExpressJS,GCAL API, OpenWeather API, SpotifyAPI, Twilio API",
     "image": "assets/images/smart-dashboard.jpeg",
     "github": "https://github.com/ion05/smart-dashboard",
     "url": ""

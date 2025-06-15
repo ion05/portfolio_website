@@ -34,7 +34,7 @@ class _ProjectsState extends State<Projects> {
                   GridView.builder(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
-                      childAspectRatio: 0.75,
+                      childAspectRatio: 0.85,
                       crossAxisSpacing:
                           MediaQuery.of(context).size.width * 0.02,
                       mainAxisSpacing:
@@ -45,7 +45,6 @@ class _ProjectsState extends State<Projects> {
                     itemBuilder: (BuildContext context, int index) {
                       return Container(
                         decoration: BoxDecoration(
-                          // color: Colors.grey[200],
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: Colors.grey[300]!,
@@ -111,6 +110,7 @@ class _ProjectsState extends State<Projects> {
                                     ),
                                     TextSpan(
                                       text: projects[index]["techStack"]!,
+                                      
                                     ),
                                   ],
                                 ),
